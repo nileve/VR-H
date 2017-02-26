@@ -1,0 +1,258 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>HTML vormielementide näited</title>
+</head>
+
+<body>
+<form method="post" onsubmit="return false;">
+
+
+	<table border="1">
+		<thead>
+		<tr>
+			<th>Nimetus</th>
+			<th>Näide</th>
+		</tr>
+		</thead>
+		<tbody>
+
+		<!-- input: text -->
+		<tr>
+			<td>input: text</td>
+			<td>
+				<input type="text" maxlength="12">
+			</td>
+		</tr>
+
+		<!-- input: password -->
+		<tr>
+			<td>input: password</td>
+			<td>
+				<input type="password" maxlength="12">
+			</td>
+		</tr>
+
+		<!-- input: hidden -->
+		<tr>
+			<td>input: hidden</td>
+			<td>
+				<input type="hidden" value="peidetud">
+			</td>
+		</tr>
+
+		<!-- input: checkbox -->
+		<tr>
+			<td>input: checkbox</td>
+			<td>
+				<label>
+					<input type="checkbox"> Esimene valik</label>
+				<br>
+				<label>
+					<input type="checkbox"> Teine valik</label>
+				<br>
+			</td>
+		</tr>
+
+		<!-- input: radio -->
+		<tr>
+			<td>input: radio</td>
+			<td>
+				<label>
+					<input type="radio" name="valik"> Esimene valik</label>
+				<br>
+				<label>
+					<input type="radio" name="valik"> Teine valik</label>
+				<br>
+			</td>
+		</tr>
+
+		<!-- input: file -->
+		<tr>
+			<td>input: file <sup>*</sup></td>
+			<td>
+				<input type="file">
+			</td>
+		</tr>
+
+		<!-- input: number -->
+		<tr>
+			<td>input: number</td>
+			<td>
+				<input type="number" min="0" max="100" step="1">
+			</td>
+		</tr>
+
+		<!-- input: range -->
+		<tr>
+			<td>input: range</td>
+			<td>
+				<input type="range" min="0" max="100" step="1">
+			</td>
+		</tr>
+
+		<!-- input: tel -->
+		<tr>
+			<td>input: tel</td>
+			<td>
+				<input type="tel">
+			</td>
+		</tr>
+
+		<!-- input: email -->
+		<tr>
+			<td>input: email</td>
+			<td>
+				<input type="email">
+			</td>
+		</tr>
+
+		<!-- input: url -->
+		<tr>
+			<td>input: url</td>
+			<td>
+				<input type="url">
+			</td>
+		</tr>
+
+		<!-- input: search -->
+		<tr>
+			<td>input: search</td>
+			<td>
+				<input type="search">
+			</td>
+		</tr>
+
+		<!-- input: color -->
+		<tr>
+			<td>input: color</td>
+			<td>
+				<input type="color">
+			</td>
+		</tr>
+
+		<!-- input: datetime -->
+		<tr>
+			<td>input: datetime</td>
+			<td>
+				<input type="datetime">
+			</td>
+		</tr>
+
+		<!-- input: datetime-local -->
+		<tr>
+			<td>input: datetime-local</td>
+			<td>
+				<input type="datetime-local">
+			</td>
+		</tr>
+
+		<!-- input: date -->
+		<tr>
+			<td>input: date</td>
+			<td>
+				<input type="date">
+			</td>
+		</tr>
+
+		<!-- input: time -->
+		<tr>
+			<td>input: time</td>
+			<td>
+				<input type="time">
+			</td>
+		</tr>
+
+		<!-- input: week -->
+		<tr>
+			<td>input: week</td>
+			<td>
+				<input type="week">
+			</td>
+		</tr>
+
+		<!-- input: month -->
+		<tr>
+			<td>input: month</td>
+			<td>
+				<input type="month">
+			</td>
+		</tr>
+
+		<!-- input: text (datalist) -->
+		<tr>
+			<td>input: text (datalist)</td>
+			<td>
+				<input type="text" list="valikud">
+				<datalist id="valikud">
+					<option>Esimene valik</option>
+					<option>Teine valik</option>
+				</datalist>
+			</td>
+		</tr>
+
+		<!-- select -->
+		<tr>
+			<td>select</td>
+			<td>
+				<select>
+					<option>Esimene valik</option>
+					<option>Teine valik</option>
+				</select>
+			</td>
+		</tr>
+
+		<!-- select: optgroup -->
+		<tr>
+			<td>select: optgroup</td>
+			<td>
+				<select>
+					<optgroup label="Grupp 1">
+						<option>Esimene valik</option>
+						<option>Teine valik</option>
+					</optgroup>
+					<optgroup label="Grupp 2">
+						<option>Kolmas valik</option>
+						<option>Neljas valik</option>
+					</optgroup>
+				</select>
+			</td>
+		</tr>
+
+
+		<!-- select: multiple -->
+		<tr>
+			<td>select: multiple</td>
+			<td>
+				<select multiple>
+					<option>Esimene valik</option>
+					<option>Teine valik</option>
+					<option>Kolmas valik</option>
+					<option>Neljas valik</option>
+				</select>
+			</td>
+		</tr>
+
+		<!-- textarea -->
+		<tr>
+			<td>textarea</td>
+			<td>
+				<textarea></textarea>
+			</td>
+		</tr>
+
+		</tbody>
+	</table>
+
+	<button type="submit">Submit</button>
+
+	<blockquote>
+		<strong>*</strong> <code>"file"</code> kasutamine nõuab vormilt atribuuti <code>enctype="multipart/form-data"</code>
+	</blockquote>
+
+</form>
+</body>
+
+</html>
